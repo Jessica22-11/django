@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+    <meta charset="UTF-8">
+    <title>My First Django Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+    body {
+        font-family: 'Roboto', sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 20px;
+        background-color: #f4f4f9; 
+        color: #333;
+    }
+    .container {
+        max-width: 960px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        padding: 25px 40px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+        color: #092E20;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        margin-bottom: 0.5em;
+    }
+
+    h2 {
+        border-bottom: 2px solid #44B78B;
+        padding-bottom: 10px;
+        margin-top: 40px;
+    }
+
+    
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        max-width: 100%; 
+        height: auto;  
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    iframe {
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1)
+    }
+
+    .navbar {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .navbar ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .navbar li {
+        display: inline-block;
+        margin: 0 15px;
+    }
+
+    .navbar a {
+        text-decoration: none;
+        color: #44B78B; 
+        font-weight: bold;
+        font-size: 1.1em;
+        transition: color 0.3s;
+    }
+
+    .navbar a:hover {
+        color: #092E20; 
+    }
+
+    hr {
+        border: 0;
+        height: 1px;
+        background-color: #e0e0e0;
+        margin: 50px 0;
+    }
+
+    ul, ol {
+        padding-left: 30px;
+    }
+
+    li {
+        margin-bottom: 10px;
+    }
+
+    footer {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 0.9em;
+        color: #777;
+    }
+    </style>
+</head>
+<img src="https://www.djangoproject.com/m/img/logos/django-logo-negative.png" alt="Django Logo" width="200" height="100"  style="background-color: #092E20; padding: 10px;">
+
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#definicion">¿Que es Django?</a></li>
+            <li><a href="#funcion">Funcion De Django</a></li>
+            <li><a href="#estructura">Estructura Django</a></li>
+            <li><a href="#ventajas">Ventajas</a></li>
+            <li><a href="#desventajas">Desventajas</a></li>
+            <li><a href="#ejemplos_empresas">Ejemplos</a></li>
+        </ul>
+    </nav>
+<hr>
+<div class="container">
+    <div id="definicion">
+        <h2>¿Que es Django?</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/srkMntDfil4?si=qqnK8_n0OA3Ezi5I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <p>
+            Django es un Framework web de alto nivel, de codigo abierto y escrito en Python, que facilita el desarrollo rápido de aplicaiones web seguras y mantenibles.
+            <br> Fue creado por Adrian Holovaty y Simon Willison en 2003 y se lanzó públicamente en 2005.
+            su nombre "Django" esta inspirado en el famoso guitarrista de jazz Django Reinhardt.
+            <br> Se utiliza para construir sitios web y aplicaiones web, aprobvecha por su facilidad de uso, su comunidad activa y su amplia gama de características, con Python que simplifican
+            tareas comunes y permite a los desarrolladores centrarse en la lógica de negocio en lugar de preocuparse por los detalles técnicos.
+            <br> Django sigue el patrón de diseño Modelo-Vista-Controlador (MVC), lo que significa que separa la lógica de negocio, la presentación y el control de flujo de la aplicación.
+            <br> Esto facilita la organización del código y la reutilización de componentes, lo que resulta en un desarrollo más eficiente y mantenible.
+        </p>
+    </div>
+    <hr>
+
+    <div id="funcion">
+        <h2>Funcion de Django</h2>
+        <p>
+            La función principal de Django es proporcionar un marco de trabajo para el desarrollo de aplicaciones web, permitiendo a los desarrolladores crear sitios web y aplicaciones de manera rápida y eficiente.
+            <br> Django ofrece una amplia gama de características, como un sistema de enrutamiento URL, un ORM (Object-Relational Mapping) para interactuar con bases de datos, un sistema de plantillas para generar HTML dinámico,
+            autenticación de usuarios, administración automática y muchas otras herramientas que facilitan el desarrollo web.
+            <br> Además, Django promueve las mejores prácticas de desarrollo, como la reutilización de código, la separación de preocupaciones y la seguridad, lo que ayuda a los desarrolladores a crear aplicaciones robustas y escalables.
+            Se utiliza para desarrollar una amplia variedad de proyectos, desde sitios web de noticias y blogs hasta redes sociales, sistemas de gestión de contenido (CMS), aplicaciones de comercio electrónico y APIs RESTful. 
+            <br>Proporciona una gran cantidad de herramientas y componentes preconstruidos para manejar tareas comunes del desarrollo web, como la autenticación de usuarios, la administración de bases de datos y la creación de formularios.
+    </div>
+    <hr>
+
+    <div id="estructura">
+        <h2>Estructura de Django</h2>
+        <p>Django sigue el patrón de diseño Modelo-Vista-Controlador (MVC), aunque sus desarrolladores lo denominan Modelo-Vista-Plantilla (MVT).
+        <br>Esta arquitectura permite separar la lógica de negocio de la presentación.</p>
+
+        <ol>
+            <li><strong>Modelo:</strong>Definen la estructura de los datos de la aplicación y la interacción con la base de datos (Django ORM). Representan las tablas de la base de datos.
+            </li>
+            <br>
+            <li><strong>Vista:</strong>Son funciones o clases que reciben peticiones web, procesan la lógica de negocio y devuelven una respuesta HTTP. Interactúan con los modelos para obtener o guardar datos.
+            </li>
+            <br>
+            <li><strong>Plantilla:</strong>Son archivos HTML con marcadores de posición que Django rellena con datos dinámicos generados por las vistas. Se encargan de la presentación de la información al usuario.
+            </li>
+            <br>
+            <li><strong>URLs:</strong>Mapean las URLs de la aplicación a las vistas correspondientes, dirigiendo las solicitudes web a la lógica adecuada.
+            </li>
+            <br>
+            <li><strong>APPs</strong>Django organiza los proyectos en "aplicaciones" (apps), que son módulos autónomos y reutilizables. Un proyecto Django puede contener varias apps, cada una con su propia lógica, modelos, vistas y plantillas.
+            </li>
+            <br>
+        </ol>
+            <p>A continuacion se ve la estructura en la que se crea un proyecto Django:</p>
+mi_proyecto/
+├── manage.py               ← Comando principal <br>
+├── mi_proyecto/            ← Configuración del proyecto <br>
+│   ├── settings.py         ← Configuración general <br>
+│   ├── urls.py             ← Enrutamiento principal<br>
+│   └── wsgi.py             ← Despliegue en servidores<br>
+├── mi_app/                 ← Módulo de aplicación<br>
+│   ├── models.py           ← Tablas de base de datos<br>
+│   ├── views.py            ← Lógica de negocio<br>
+│   ├── urls.py             ← Rutas locales de la app<br>
+│   └── templates/          ← Archivos HTML<br>
+    </div>
+    <hr>
+
+    <div id="ventajas">
+        <h2>Ventajas de Django</h2>
+        <p>Entre las ventajas de Django se encuentran:</p>
+        <ul>
+            <li><strong>Desarrollo rápido:</strong> Django está diseñado para que los desarrolladores lleven las aplicaciones del concepto a la finalización lo más rápido posible.
+            </li>
+            <li><strong>Baterías incluidas:</strong>Viene con una gran cantidad de funcionalidades listas para usar, como un panel de administración, autenticación de usuarios y un sistema de comentarios
+            </li>
+            <li><strong>Seguridad:</strong> Django incluye varias características de seguridad  integradas para proteger contra vulnerabilidades comunes como inyección SQL, scripting entre sitios (XSS) y falsificación de solicitudes entre sitios (CSRF).
+            </li>
+            <li><strong>Escalabilidad:</strong>Es capaz de manejar grandes volúmenes de datos y solicitudes de usuarios sin comprometer el rendimiento.Ha sido utilizado por sitios de alto tráfico como Instagram, Mozilla y Pinterest
+            </li>
+            <li><strong>ORM (Mapeo Objeto-Relacional):Permite interactuar con la base de datos utilizando objetos de Python en lugar de SQL, lo que simplifica el desarrollo y facilita el cambio entre diferentes bases de datos</strong>
+            </li>
+            <li><strong>Panel de administración:</strong>Genera automáticamente un panel de administración funcional para gestionar los datos de la aplicación.
+            </li>
+            <li><strong>Gran comunidad y soporte:</strong>Cuenta con una comunidad activa y numerosa que ofrece un amplio soporte y recursos.
+            </li>
+        </ul>
+    </div>
+    <hr>
+
+    <div id="desventajas">
+        <h2>Desventajas de Django</h2>
+        <p>Entre las desventajas de Django se encuentran:</p>
+        <ul>
+            <li><strong>Curva de aprendizaje alta:</strong> El inicio puede ser algo complejo y requiere tiempo para aprovecharlo al máximo.
+            </li>
+            <li><strong>Excesivo para proyectos pequeños:</strong>  Las capacidades de Django pueden ser desproporcionadas para proyectos sencillos
+            </li>
+            <li><strong>Monolítico</strong>  Aunque se divide en apps, algunos lo consideran un framework más monolítico en comparación con micro-frameworks que ofrecen mayor libertad en la elección de componentes.
+            </li>
+            <li><strong>Decisiones Predefinidas:</strong> Si bien las convenciones aceleran el desarrollo, también pueden limitar la flexibilidad si un desarrollador prefiere un enfoque muy diferente al que propone Django.
+            </li>
+            <li><strong>Falta de soporte nativo para WebSocket:</strong> No incluye soporte para WebSockets de forma nativa, lo que requiere el uso de otras herramientas para la comunicación en tiempo real
+            </li>
+        </ul>
+    </div>
+    <hr>
+
+    <div id="ejemplos_empresas">
+        <h2>Ejemplo de empresas que usan Django</h2>
+        <p>Entre las empresas que han utilizado Django se encuentran:</p>
+        <ul>
+            <li><strong>Spotify:</strong> El gigante del streaming de música se apoya en Django para sus servicios de backend y APIs, que son cruciales para la entrega de música y la generación de recomendaciones personalizadas.
+            </li>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF4i2h_y9d6x6SR8ozro3iSxCMrF48ibbBIw&s" alt="Spotify" width="200">
+            <li><strong>Instagram:</strong>La popular plataforma para compartir fotos y videos utiliza Django en su backend para gestionar la enorme cantidad de datos y las interacciones de sus millones de usuarios.
+            </li>
+            <img src="https://www.letemsvetemapplem.eu/es/wp-content/uploads/2018/09/instagram-fb.jpg" alt="Instagram" width="200">
+            <li><strong>Pinterest: </strong> Esta red social visual, donde los usuarios descubren y guardan ideas creativas, fue construida inicialmente con Django para manejar su gran volumen de tráfico y permitir un rápido desarrollo de sus funcionalidades principales.
+            </li>
+            <img src= "https://www.triunfarenlared.com/wp-content/uploads/2022/07/Pinterest-logo.png" alt="Pinterest" width="200">
+            <li><strong>Mozilla:</strong> La organización detrás del navegador Firefox emplea Django en varios de sus sitios de soporte y portales comunitarios.
+            </li>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS27cbVmEeNd3t1C1X2A2POQYHmDXtCApLDdg&s" alt="Mozilla" width="200">
+            <li><strong>National Geographic:</strong>Su sistema de gestión de contenidos y el backend de su sitio web funcionan con la tecnología de Django.
+            </li>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/National-Geographic-Logo.svg/1200px-National-Geographic-Logo.svg.png" alt="National Geographic" width="200">
+        </ul>
+    </div>
+    <hr>
+</div>
+<footer>
+        <p>&copy; 2025 Jessica Alfosno - Todo Sobre Django. Todos los derechos reservados.</p>
+</footer>
+</body>
+</html>
