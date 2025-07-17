@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}{% endblock %}</title>
+    <style>
+        body {
+            font-family: Arial, sans serif;
+            background-color: #e8ddf1ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #00805eff;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .container {
+            flex: 1;
+            width: 80%;
+            margin: 20px auto;
+            padding: 15px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+
+        p{
+            font-size: 1.1em;
+            line height: 1.6;
+        }
+
+        footer{
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+<header>
+<h1>Tennis Club</h1>
+</header>
+
+<div class ="container">
+<h2>Welcome to the Club!</h2>
+<img src= "https://plus.unsplash.com/premium_photo-1666913667082-c1fecc45275d?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dGVubmlzfGVufDB8fDB8fHww" alt="My_tennis_club" width="300">
+<p> This a list of the members in the club</p>
+</div>
+
+{% block content %}
+{% endblock %}
+
+<footer>
+    <p> 2025 Tennis Club. Todos los derechso resetvados</p>
+    <p>Contactanos: info@tennisclub.com</p>
+</footer>
+</body>
+</html>
