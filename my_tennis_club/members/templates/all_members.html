@@ -6,11 +6,13 @@
 
 
 {% block content %}
+<div class="container">
     <h1>Members</h1>
 
-    <ul>
+    <ul class="member-list">
     {% for x in mymembers %}
         <li><a href="details/{{ x.id }}">{{ x.firstname }} {{ x.lastname }}</a></li>
     {% endfor %}
     </ul>
+</div>
 {% endblock %}
