@@ -10,3 +10,6 @@ class Member(models.Model):
     gender = models.CharField(max_length=10, null=True)
     birthday = models.DateField(null=True)
     email = models.EmailField(null=True)
+    
+    def __str__(self):
+        return f"{self.firstname} {self.lastname}"
